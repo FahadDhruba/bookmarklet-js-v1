@@ -15,7 +15,7 @@ javascript: (function () {
         var srclink = gcloud.src;
         copyToClipboard(srclink);
         alert(
-          "Google Cloud Link Copied...!!! \n \n Paste It Into Suggested Video Player..."
+          "Google Cloud Link Copied...!!! \n \n Paste It Into Suggested Video Player...!!!"
         );
       } else if (iframe) {
         var src = iframe.src;
