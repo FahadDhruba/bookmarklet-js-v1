@@ -13,10 +13,12 @@ var gcloud = document.querySelector("video[src]");
 if (gcloud) {
   var srclink = gcloud.src;
   copyToClipboard(srclink);
-  alert("Google Cloud Link Copied...!!! \n \n Paste It Into Suggested Video Player...!!!");
+  alert(
+    "Google Cloud Link Copied...!!! \n \n Paste It Into Suggested Video Player...!!!"
+  );
 } else if (iframe) {
   var src = iframe.src;
-  var youtoob = "https://www.youtube.com/watch?v=" + src.slice(30, 41);
+  var youtoob = "https://youtu.be/" + src.slice(30, 41);
   copyToClipboard(youtoob);
   alert("Youtoob Link Copied...!!! \n ");
 } else {
