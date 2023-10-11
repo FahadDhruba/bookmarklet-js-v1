@@ -19,7 +19,9 @@ javascript: (function () {
     );
   } else if (iframe) {
     var src = iframe.src;
-    var youtoob = "https://youtu.be/" + src.slice(30, 41);
+    var regex = /([A-Za-z0-9-_])+/g;
+    var matches = src.match(regex);
+    var youtoob = "https://youtu.be/" + matches[5];
     copyToClipboard(youtoob);
     alert("Youtoob Link Copied...!!! \n ");
   } else {
